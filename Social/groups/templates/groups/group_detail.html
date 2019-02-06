@@ -8,13 +8,13 @@
   {% if user in group.members.all %}
 
     <a href="{% url 'groups:leave' slug=greoup.slug %}"
-     class="btn btn-lg btn-fill btn-warning">
+     class="btn btn-lg btn-fill btn-danger">
      <span class='glyphicon glyphicon-remove-circle'> </span>
      Leave</a>
 
      {% else %}
      <a href="{% url 'groups:join' slug=greoup.slug %}"
-      class="btn btn-lg btn-fill btn-warning">
+      class="btn btn-lg btn-fill btn-danger">
       <span class='glyphicon glyphicon-ok-circle'> </span>     Join</a>
       {% endif %}
 </div>
